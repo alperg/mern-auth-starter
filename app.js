@@ -6,9 +6,9 @@ const xss = require('xss-clean');
 const hpp = require('hpp');
 const cors = require('cors');
 
-const userRoutes = require('./routes/userRoutes');
-const globalErrHandler = require('./controllers/errorController');
-const AppError = require('./utils/appError');
+const userRoutes = require('./server/routes/userRoutes');
+const globalErrHandler = require('./server/controllers/errorController');
+const AppError = require('./server/utils/appError');
 const app = express();
 
 // Allow Cross-Origin requests
